@@ -74,7 +74,17 @@
 <!-- sources for Utils folder -->
     <source-file src="src/ios/Utils/NSBundle+CULPlugin.m" target-dir="Utils/"/>
     <header-file src="src/ios/Utils/NSBundle+CULPlugin.h" target-dir="Utils/"/>
+<config-file target="*/Entitlements-Debug.plist" parent="com.apple.developer.associated-domains">
+      <array>
+        <string>applinks:biscord.com</string>
+      </array>
+</config-file>
 
+<config-file target="*/Entitlements-Release.plist" parent="com.apple.developer.associated-domains">
+      <array>
+        <string>applinks:biscord.com</string>
+      </array>
+</config-file>
   </platform>
 
   <platform name="android">
