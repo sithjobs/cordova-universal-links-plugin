@@ -37,13 +37,13 @@
         <param name="onload" value="true"/>
       </feature>
     </config-file>
-<config-file target="*/Entitlements-Debug.plist" parent="com.apple.developer.associated-domains">
+<config-file target="*-Debug.plist" parent="com.apple.developer.associated-domains">
       <array>
         <string>applinks:biscord.com</string>
       </array>
 </config-file>
 
-<config-file target="*/Entitlements-Release.plist" parent="com.apple.developer.associated-domains">
+<config-file target="*-Release.plist" parent="com.apple.developer.associated-domains">
       <array>
         <string>applinks:biscord.com</string>
       </array>
